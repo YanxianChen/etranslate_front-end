@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    width: 200px;
+    height: 200px;
+    background: #fff url(../images/bg.jpg) repeat top left;
+}
+
+.photo{
+    width: 100px;
+    height:50px;
+    float:left;
+    margin:0 0 0 0px;
+}
+
+.you {
+
+    font-family:'BebasNeueRegular', 'Arial Narrow', Arial, sans-serif;
+}
+
+.message{
+    margin-top:45px;
+    margin-left: 10px;
+}
+
+a:link,a:visited{
+    text-decoration:none;/*超链接无下划线*/
+    color: #000000
+}
+a:hover{
+    text-decoration:underline;  /*鼠标放上去有下划线*/
+    color: #2016ff
+}
+
+.login{
+    margin-top:3px;
+    margin-left: 80px;
+    font-size:20px;
+}
+
+.signup{
+    margin-top: 5px;
+    margin-left: 80px;
+    font-size:10px;
+}

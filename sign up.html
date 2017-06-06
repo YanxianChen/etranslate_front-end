@@ -1,0 +1,60 @@
+<html>
+<head>
+    <title>用户注册</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="scripts/sign up.js"></script>
+    <link rel="stylesheet" href="style/sign up.css">
+
+</head>
+<body>
+<!--如果表单提交时候触发的方法返回是false,那么该表单不允许提交，如果返回的是true允许提交
+action 是提交的地址 ，根据name提交表单
+提交方式有两种：post隐藏提交信息
+                                    get不隐藏
+                                    form表单的onsubmit方法，在提交表单之前，对表单或者网页中的数据进行检验。
+-->
+
+<form action="www.baidu.com" method="post" id="Form" onsubmit="return checkAll()" >
+    <div class="outer" >
+
+        <div class="head">
+            划词翻译注册
+        </div>
+
+        <div class="userName">
+        <img  src="images/head.png"   width="30" height="30" border="0" />
+        <input type="text"name="userName" id="userName"  placeholder="六位的英文与数字组成,数字不能开头" />
+        <span id="userId"></span>
+    </div>
+    <div class="mail">
+        <img  src="images/mail.png"   width="30" height="30" border="0" />
+        <input type="text" name="email" id="email" placeholder="mymail@mail.com"/>
+        <span id="emailspan"></span>
+    </div>
+    <div class="password">
+        <img  src="images/password.png"   width="30" height="30" border="0" />
+        <input type="password" name="password" id="password"   placeholder="数字和英文组成,长度为6-16个字符"/>
+        <span id="passId"></span>
+    </div>
+    <div class="ensurepwd">
+        <img  src="images/password.png"   width="30" height="30" border="0" />
+        <input type="password"  id="ensurepwd"  placeholder="确认密码"  />
+        <span id="ensure"></span>
+    </div>
+
+    <input id="button" type="submit" value="Sign up"/>
+
+    <div   class="login">
+        <a   href="login.html">or Log in</a>
+    </div>
+
+        <div   class="exit">
+            <a   href="popup.html">Exit</a>
+        </div>
+</div>
+
+</form>
+
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link type="text/css" rel="stylesheet" href="style/default.css"/> 
+</head>
+<!--
+   该页面提供翻译界面，有三个功能按钮，1,显示用户翻译  2，提供自己的翻译  3,加入生词本
+-->
+<body>
+<div id='_popup_'>
+    <div id='_title_'>划词翻译</div>
+    <div id='_content_'>
+        <b id='_result_'>No Result</b>
+        <br />
+        <hr id='_hr_' />
+        <ul id='_webresult_'></ul>
+        <hr id='_hr1_' />
+        <ul id='_userresult_'></ul> 
+        <hr id='_hr2_' />
+				    <button  id='showUserTran' >显示用户译文 </button>
+				    <button id='addUserTran' >添加译文</button>
+                    <button id='addNewWord' type = "button" >替换</button>
+                    
+ </div>
+<!--
+   用户翻译板块显示
+--> 
+<div id="getUserTran"  style='width:280px; background-color:white;border: 1px solid #00bfff; display: none;'>
+      <ul id='_websesult_'>
+
+              <div class="translate">there : 在哪里  Tom </div>
+              <div class="praise">
+	         <span id="praise"><img src="images/zan.png" id="praise-img" /></span>
+	         <span id="praise-txt">14</span>
+             </div>
+
+         </ul>
+</div> 
+<!--
+   提供用户翻译板块
+--> 
+<div id="setUserTran"  style='width:280px; background-color:white;border: 1px solid #00bfff; display: none'>
+       <form action="" id = "userstrans" method="post">
+		   <table>
+                <tr>
+				    <td>输入译文</td>
+				    <td><input id = "Trantext" name="usertranslate" type="text"/></td>
+			    </tr>
+			
+			    <tr>
+				    <td><input id = "TransSubmit" type="button" value="确认"/></td>
+                    <td><input id = "newWord" type="button" value="生词本"/></td>
+			    </tr>
+		   </table>
+	   </form> 
+</div>
+
+</div>
+<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="scripts/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="scripts/test.js"></script>  
+<script type="text/javascript" src="scripts/popup.js"></script>  
+</body>
+</html>
+
+  
